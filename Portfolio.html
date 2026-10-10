@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Aman Yadav | Software & Web Developer Portfolio</title>
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body class="dark-theme">
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-accent">&lt;</span><span id="nav-name-logo">Aman</span><span class="logo-accent">/&gt;</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Education & Experience</a></li>
+        <li><a href="#playground">Playground</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" title="Toggle Theme" aria-label="Toggle dark/light theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button id="edit-profile-btn" class="btn btn-outline btn-sm">
+          <i class="fas fa-edit"></i> Edit Profile Data
+        </button>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="badge badge-accent">
+            <span class="status-dot"></span> Available for Internships & Projects
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient" id="hero-name">Aman Yadav</span>
+          </h1>
+          <h2 class="hero-subtitle" id="hero-title-text">Software & Web Developer</h2>
+          <p class="hero-description" id="hero-bio">
+            Computer Science student at PSIT Kanpur (BCA). Passionate about full-stack web development, modern Android applications, and algorithmic problem solving in C++ & Python.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-project-diagram"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-paper-plane"></i> Contact Me
+            </a>
+            <a href="Aman_Yadav_Resume.pdf" id="hero-resume-link" class="btn btn-outline" target="_blank" rel="noopener">
+              <i class="fas fa-file-download"></i> Resume
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com" id="social-github" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/aman-yadav-51b174386" id="social-linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="tel:+917376108775" id="social-phone" aria-label="Phone"><i class="fas fa-phone"></i></a>
+            <a href="mailto:amanyadav18529@gmail.com" id="social-email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="code-card">
+            <div class="code-card-header">
+              <div class="dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="code-card-title">developer.config.ts</span>
+            </div>
+            <pre class="code-card-body"><code id="hero-code-snippet">
+<span class="token-keyword">const</span> <span class="token-variable">developer</span> = {
+  <span class="token-property">name</span>: <span class="token-string">'Aman Yadav'</span>,
+  <span class="token-property">role</span>: <span class="token-string">'Software & Web Developer'</span>,
+  <span class="token-property">college</span>: <span class="token-string">'PSIT Kanpur (BCA)'</span>,
+  <span class="token-property">coreStack</span>: [<span class="token-string">'C++'</span>, <span class="token-string">'Python'</span>, <span class="token-string">'JavaScript'</span>, <span class="token-string">'Firebase'</span>],
+  <span class="token-property">status</span>: <span class="token-string">'Open for opportunities'</span>
+};
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="section-container">
+        <h2 class="section-title"><span class="title-num">01.</span> About Me</h2>
+        <div class="about-grid">
+          <div class="about-image-wrapper">
+            <img src="" alt="Aman Yadav" class="about-avatar">
+          </div>
+          <div class="about-text">
+            <p id="about-p1">
+              I am a dedicated Computer Science student pursuing Bachelor of Computer Applications (BCA) at <strong>PSIT College of Higher Education, Kanpur</strong> (Batch 2025–2028, CGPA: <strong>7.80</strong>). I have a strong foundation in Object-Oriented Programming, Data Structures, and modern web application development.
+            </p>
+            <p id="about-p2">
+              My hands-on experience includes engineering <strong>Presenz</strong> (a distributed Android classroom attendance platform with live CameraX facial recognition and GPS geofencing), building <strong>CivicLens</strong> for Smart India Hackathon to report civic issues in real time, and creating management web portals. Constantly advancing my problem-solving skills in C++, Python, and full-stack web technologies.
+            </p>
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <span class="metric-val">7.80</span>
+                <span class="metric-lbl">CGPA (PSIT Kanpur)</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-val">5+</span>
+                <span class="metric-lbl">Projects Built</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-val">4+</span>
+                <span class="metric-lbl">Certifications</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section bg-alt">
+      <div class="section-container">
+        <h2 class="section-title"><span class="title-num">02.</span> Technical Skills</h2>
+        <div class="skills-filter" id="skills-filter-container">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="programming">Programming & Logic</button>
+          <button class="filter-btn" data-filter="frontend">Web & Frontend</button>
+          <button class="filter-btn" data-filter="tools">Cloud, DB & Tools</button>
+        </div>
+        <div class="skills-grid" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="section-container">
+        <h2 class="section-title"><span class="title-num">03.</span> Featured Projects</h2>
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION SECTION -->
+    <section id="experience" class="section bg-alt">
+      <div class="section-container">
+        <h2 class="section-title"><span class="title-num">04.</span> Education & Experience</h2>
+        <div class="timeline" id="timeline-container"></div>
+
+        <div class="certifications-block">
+          <h3 style="font-size: 1.4rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.6rem;">
+            <i class="fas fa-certificate" style="color: var(--accent-color);"></i> Certifications & Achievements
+          </h3>
+          <div class="certs-grid" id="certs-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE PLAYGROUND -->
+    <section id="playground" class="section">
+      <div class="section-container">
+        <h2 class="section-title"><span class="title-num">05.</span> Interactive UI Playground</h2>
+        <p class="section-desc">Test custom UI components directly in the browser.</p>
+        
+        <div class="playground-card">
+          <div class="playground-header">
+            <h3>Component: Dynamic Theme-Aware Button Gallery</h3>
+          </div>
+          <div class="playground-body">
+            <div class="playground-controls">
+              <label>
+                Button Label:
+                <input type="text" id="pg-btn-text" value="Interactive Action" class="input-field">
+              </label>
+              <label>
+                Variant:
+                <select id="pg-btn-variant" class="input-field">
+                  <option value="primary">Primary</option>
+                  <option value="secondary">Secondary</option>
+                  <option value="outline">Outline</option>
+                </select>
+              </label>
+              <label>
+                Size:
+                <select id="pg-btn-size" class="input-field">
+                  <option value="sm">Small</option>
+                  <option value="md" selected>Medium</option>
+                  <option value="lg">Large</option>
+                </select>
+              </label>
+            </div>
+            
+            <div class="playground-preview">
+              <span class="preview-label">Live Preview:</span>
+              <div class="preview-stage">
+                <button id="pg-preview-btn" class="btn btn-primary">Interactive Action</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section bg-alt">
+      <div class="section-container">
+        <h2 class="section-title"><span class="title-num">06.</span> Get In Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Let's build something awesome together!</h3>
+            <p>I am currently open to new career opportunities, freelance roles, or technical collaborations. Feel free to reach out!</p>
+            
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span id="contact-email-text">amanyadav18529@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <span id="contact-phone-text">+91 7376108775</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span id="contact-location-text">115/A Vijay Nagar, near Dhobi Ghat, Kanpur, Uttar Pradesh, India</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="form-name">Your Name</label>
+              <input type="text" id="form-name" required class="input-field" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label for="form-email">Your Email</label>
+              <input type="email" id="form-email" required class="input-field" placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" rows="4" required class="input-field" placeholder="Hi Aman, I'd like to discuss an opportunity or project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>Designed & Built by <span id="footer-name">Aman Yadav</span> &copy; <span id="footer-year">2026</span></p>
+    </div>
+  </footer>
+
+  <!-- EDIT PROFILE MODAL -->
+  <div class="modal-overlay" id="edit-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3><i class="fas fa-user-edit"></i> Edit Your Portfolio Data</h3>
+        <button class="modal-close" id="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="edit-profile-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" id="edit-name" class="input-field" required value="Aman Yadav">
+            </div>
+            <div class="form-group">
+              <label>Job Title</label>
+              <input type="text" id="edit-title" class="input-field" required value="Software & Web Developer">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Short Hero Bio</label>
+            <textarea id="edit-bio" class="input-field" rows="2" required>Computer Science student at PSIT Kanpur (BCA). Passionate about full-stack web development, modern Android applications, and algorithmic problem solving in C++ & Python.</textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" id="edit-email" class="input-field" required value="amanyadav18529@gmail.com">
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="text" id="edit-phone" class="input-field" value="+91 7376108775">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Location</label>
+            <input type="text" id="edit-location" class="input-field" required value="115/A Vijay Nagar, near Dhobi Ghat, Kanpur, UP, India">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>GitHub URL</label>
+              <input type="url" id="edit-github" class="input-field" value="https://github.com">
+            </div>
+            <div class="form-group">
+              <label>LinkedIn URL</label>
+              <input type="url" id="edit-linkedin" class="input-field" value="https://www.linkedin.com/in/aman-yadav-51b174386">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Twitter / Social URL</label>
+              <input type="url" id="edit-twitter" class="input-field">
+            </div>
+            <div class="form-group">
+              <label>Resume Link</label>
+              <input type="text" id="edit-resume" class="input-field" value="Aman_Yadav_Resume.pdf">
+            </div>
+          </div>
+
+          <div class="modal-actions">
+            <button type="button" class="btn btn-secondary" id="modal-cancel-btn">Cancel</button>
+            <button type="button" class="btn btn-outline" id="reset-defaults-btn">Reset Defaults</button>
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="Portfolio.js"></script>
+</body>
+</html>
